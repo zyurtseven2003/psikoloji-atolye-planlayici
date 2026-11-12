@@ -1,52 +1,37 @@
-PROMPTLAR – Psikoloji Atölyesi Planlayıcısı
+Psikoloji Atölyesi Planlayıcısı | PROMPT GÜNLÜĞÜ
 
-Yapay Zekâ Kullanım Günlüğü
+Başlangıç promptu bu beş takip promptuna dahil değildir. Aşağıdaki mesajlar 12 Kasım 2026 tarihinde ChatGPT’ye gerçekten gönderildi. Kodun mevcut sürümünü korumayı seçtim.
 
-Bu projede ChatGPT, Python programının geliştirilmesi, kodun anlaşılması ve karşılaşılan hataların çözülmesi amacıyla kullanılmıştır. Yapay zekâ tarafından oluşturulan kod Google Colab ortamında çalıştırılmış ve sonuçları kontrol edilmiştir.
+Takip Promptu 1
 
-Aşağıda proje sürecindeki beş yapay zekâ kullanım aşaması açıklanmıştır. Prompt ifadeleri birebir konuşma kayıtları değil, yapılan işlemlerin özetleridir.
+Gönderdiğim mesaj: Psikoloji Atölyesi Planlayıcısı uygulamamda kullanılan fonksiyonları, döngüleri ve koşul yapılarını açıkla. Kodun GEP1316 ödev yönergesindeki gereksinimleri karşılayıp karşılamadığını değerlendir.
 
-1. Python Programının Oluşturulması
+Değerlendirme ve kararım (A): 6 fonksiyon ve gerekli Python yapıları doğrulandı. A: Kodu korudum; ödevin temel koşullarını karşılıyor.
 
-Prompt özeti: Python kullanarak psikoloji atölyelerinin planlanmasını sağlayan bir program oluşturulması.
+Takip Promptu 2
 
-Yapay zekânın katkısı: ChatGPT, kullanıcıdan atölye konusu, katılımcı sayısı, grup kapasitesi ve etkinlik süresi bilgilerini alan bir Python programının hazırlanmasına yardımcı oldu.
+Gönderdiğim mesaj: Psikoloji Atölyesi Planlayıcısı uygulamamda negatif sayı (-5), sıfır (0), harf (abc) ve boş giriş yapıldığında programın nasıl davrandığını incele. Hata kontrollerinin yeterli olup olmadığını değerlendir ve geliştirilmesi gereken bir durum varsa açıkla.
 
-Değerlendirme: Programın istenen bilgileri alıp almadığı çalıştırılarak kontrol edildi.
+Değerlendirme ve kararım (A): Hata kontrolleri incelendi; üst sınır eksikliği belirlendi. A: Kodu değiştirmedim; mevcut testler başarılı.
 
-2. Katılımcıların Gruplara Ayrılması
+Takip Promptu 3
 
-Prompt özeti: Katılımcı sayısına ve grup kapasitesine göre gerekli grup sayısının hesaplanması.
+Gönderdiğim mesaj: Psikoloji Atölyesi Planlayıcısı için hazırladığın Python kodunu eleştirel biçimde değerlendir. Kodun güçlü ve zayıf yönlerini açıkla. Yapay zekâ tarafından oluşturulan kodda gereksiz karmaşıklık, eksik özellik veya iyileştirilebilecek bir bölüm var mı? Bunları başlangıç seviyesindeki bir öğrenciye anlaşılır şekilde anlat.
 
-Yapay zekânın katkısı: Katılımcıların belirlenen kapasiteyi aşmadan gruplara dağıtılmasını sağlayan hesaplama işlemi oluşturuldu.
+Değerlendirme ve kararım (A): Eski raporun üzerine yazma, süre hesabı ve üst sınır eksikleri belirlendi. A: Kapsamı koruyup sınırlılıkları raporladım.
 
-Değerlendirme: 23 katılımcı ve 10 kişilik grup kapasitesi kullanılarak program test edildi. Sonuçta 10, 10 ve 3 kişilik üç grup oluşturulduğu görüldü.
+Takip Promptu 4
 
-3. Programın Google Colab Ortamında Çalıştırılması
+Gönderdiğim mesaj: Programımda 23 katılımcı ve 10 kişilik grup kapasitesi girildiğinde 10, 10 ve 3 kişilik gruplar oluşuyor. Bu hesaplamanın neden doğru olduğunu açıkla. Katılımcı sayısı kapasiteye tam bölünmediğinde programın nasıl çalıştığını değerlendir.
 
-Prompt özeti: Hazırlanan Python dosyasının Google Colab ortamında nasıl çalıştırılacağının açıklanması.
+Değerlendirme ve kararım (A): 10+10+3 matematiksel olarak doğru; 8+8+7 alternatifi incelendi. A: Mevcut dağılımı korudum.
 
-Yapay zekânın katkısı: Python dosyasının Colab ortamına yüklenmesi ve çalıştırılması için gerekli adımlar açıklandı.
+Takip Promptu 5
 
-Değerlendirme: Program Google Colab üzerinde çalıştırıldı ve kullanıcıdan bilgi isteyen ekran görüntülendi.
+Gönderdiğim mesaj: Psikoloji Atölyesi Planlayıcısı uygulamamın atolye_plani.txt dosyasını nasıl oluşturduğunu açıkla. Dosyanın üzerine yazılması ile mevcut dosyaya yeni bilgi eklenmesi arasındaki farkı anlat. Ödevim için hangi yöntemin daha uygun olduğunu değerlendir.
 
-4. Dosya Bulunamadı Hatasının Çözülmesi
+Değerlendirme ve kararım (A): “w” ve “a” yöntemleri karşılaştırıldı. A: Güncel raporu tutmak için “w” yöntemini korudum.
 
-Prompt özeti: Google Colab ortamında File not found hatasının nedeninin ve çözümünün açıklanması.
+Genel değerlendirme
 
-Yapay zekânın katkısı: Hatanın Python dosyasının çalışma ortamında bulunmamasıyla ilgili olduğu açıklandı. Dosyanın Colab’a yüklenmesi gerektiği belirtildi.
-
-Değerlendirme: uygulama.py dosyası Colab’a yüklendikten sonra program yeniden çalıştırıldı ve hata giderildi.
-
-5. Program Çıktısının Kaydedilmesi
-
-Prompt özeti: Atölye planlama sonuçlarının bir metin dosyasına kaydedilmesi ve GitHub’a yüklenmesi konusunda yardım alınması.
-
-Yapay zekânın katkısı: Program çıktısının atolye_plani.txt dosyası olarak kaydedilmesi ve GitHub deposuna aktarılması sürecinde yönlendirme sağlandı.
-
-Değerlendirme: Oluşturulan rapor dosyası kontrol edildi ve GitHub deposuna yüklendi.
-
-Genel Değerlendirme
-
-ChatGPT, Python programının geliştirilmesi ve teknik sorunların çözülmesi sürecinde yardımcı bir araç olarak kullanılmıştır. Ancak yapay zekâ tarafından oluşturulan kodun doğrudan doğru kabul edilmemesi gerektiği görülmüştür. Program çalıştırılarak sonuçları incelenmiş, karşılaşılan dosya hatası düzeltilmiş ve örnek katılımcı bilgileriyle hesaplamaların doğruluğu kontrol edilmiştir.
-
+Kodda doğrulanmış bir çalışma hatası tespit etmedim. Ancak yapay zekâ çıktısının sınırlarını inceledim: çok büyük girdilere üst sınır konmaması, grupların eşit dengelenmemesi ve program yeniden çalıştırıldığında eski TXT raporunun üzerine yazılması. Bunları gerçek hata olarak göstermiyorum; geliştirme seçenekleri olarak değerlendiriyorum. Kodun mevcut sürümünü değiştirmemeyi seçtim.
